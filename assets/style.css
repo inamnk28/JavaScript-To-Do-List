@@ -1,0 +1,74 @@
+/* @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@1,200&display=swap');
+* {
+    padding: 0;
+    margin: 0;
+    font-family: montserrat;
+}
+.container {
+    background-image: url(https://i.postimg.cc/Cx6szvXf/pexels-pixabay-259915.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 100vh;
+    display: grid;
+    place-items: center;
+}
+.head {
+    display: flex;
+    justify-content: center;
+    padding-bottom: 10px;
+    font-size: 30px;
+}
+.but {
+    margin-inline: 10px;
+    height: 50px;
+    padding: 5px;
+    background-color: transparent;
+    color: white;
+    border-radius: 5px;
+}
+#date {
+    color: white;
+    font-size: xx-large;
+}
+.but:hover {
+    background-color: transparent;
+    color: white;
+    border: solid;
+    border-radius: 5px;
+    clip-path: polygon(
+        0.5rem 0, 100% 0,
+        calc(100% - 0.5rem) 100%, 0 100%
+    );
+}
+#your-tasks {
+    background-color: black;
+    color: white;
+    border: solid;
+}
+#task {
+    height: 70px;
+    text-align: center;
+    font-size: x-large;
+    padding: 5px;
+    border-radius: 5px;
+    background-color: transparent;
+    width: 20rem;
+}
+#task:hover {
+    color: white;
+    border: solid;
+    border-radius: 5px;
+    clip-path: polygon(
+        0.5rem 0, 100% 0,
+        calc(100% - 0.5rem) 100%, 0 100%
+    );
+}
+::placeholder {
+    color: white;
+} */
+.delete {
+    height: 25px;
+    width: 25px;
+    margin-top: 1px;
+}
