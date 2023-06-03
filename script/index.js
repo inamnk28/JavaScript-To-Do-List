@@ -1,25 +1,30 @@
-document.querySelector('#push').onclick = function(){
-    if(document.querySelector('#newtask input').value.length == 0){
-        alert("Kindly Enter Task Name!!!!")
-    }
+let theTasks = [];
+let theDay = new Date()
 
-    else{
-        document.querySelector('#tasks').innerHTML += `
-            <div class="task">
-                <span id="taskname">
-                    ${document.querySelector('#newtask input').value}
-                </span>
-                <button class="delete">
-                    <i class="far fa-trash-alt"></i>
-                </button>
-            </div>
-        `;
 
-        var current_tasks = document.querySelectorAll(".delete");
-        for(var i=0; i<current_tasks.length; i++){
-            current_tasks[i].onclick = function(){
-                this.parentNode.remove();
-            }
-        }
+function addToDo() {
+    let objTasks = {
+        id: '',
+        name: document.getElementById("task").value,
+        createdDate: theDay,
+        completed: false,
+};
+theTasks.push(objTasks);
+dispTasks()
+
+function dispTasks() {
+    if(document.getElementById("task").value.length < 3){
+        alert("User Your Task Must At Least Have 3 Characters!!!!")
+    } 
+    else {
+        document.getElementById("yourTasks").innerHTML += `
+        <div class="task">
+        <button class="tan" onclick="${objTasks.completed = true} del()">Done</button>
+        <p class="text">${objTasks.name}</p>
+        <button class="tan" onclick = "theTasks.slice(${theTasks.indexOf(objTasks)}, 1 dispTasks())">Delete</button>
+        </div>
+        `
     }
+}
+
 }
