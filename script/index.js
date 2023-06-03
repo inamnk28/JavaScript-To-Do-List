@@ -19,9 +19,9 @@ function dispTasks() {
     else {
         document.getElementById("yourTasks").innerHTML += `
         <div class="task">
-        <button class="tan" onclick="${objTasks.completed = true} del()">Done</button>
+        <button class="tan" onclick="${objTasks.completed = true} done()">Done</button>
         <p class="text">${objTasks.name}</p>
-        <button class="tan" onclick = "theTasks.slice(${theTasks.indexOf(objTasks)}, 1 dispTasks())">Delete</button>
+        <button class="tan" onclick = "theTasks.slice(${theTasks.indexOf(objTasks)}, 1 dispTasks()) del()">Delete</button>
         </div>
         `
     }
